@@ -1,0 +1,45 @@
+{
+  "name": "gatsby-plugin-rcs",
+  "version": "0.0.0-alpha.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPeer264/gatsby-plugin-rcs.git"
+  },
+  "author": "Jan Peer Stöcklmair <janpeer264@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JPeer264/gatsby-plugin-rcs/issues"
+  },
+  "homepage": "https://github.com/JPeer264/gatsby-plugin-rcs#readme",
+  "peerDependencies": {
+    "gatsby": "2.*",
+    "rcs-core": "2.*"
+  },
+  "dependencies": {
+    "mini-css-extract-plugin": "^0.9.0",
+    "rcs-webpack-plugin": "^1.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8"
+  }
+}
